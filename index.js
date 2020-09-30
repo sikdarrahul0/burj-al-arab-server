@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 
 const port = 5000;
 require('dotenv').config()
-console.log(process.env.DB_USER, process.env.DB_PASS)
 const MongoClient = require('mongodb').MongoClient;
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.u2qyt.mongodb.net/burjalarabDB?retryWrites=true&w=majority`;
 
